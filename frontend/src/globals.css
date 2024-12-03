@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar,
+.right-sidebar {
+    pointer-events: none; /* Prevents sidebars from capturing pointer events */
+}
+
+/* Allow internal interactions */
+.sidebar * {
+    pointer-events: auto;
+}
+
+.right-sidebar * {
+    pointer-events: auto;
+}
